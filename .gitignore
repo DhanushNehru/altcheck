@@ -1,0 +1,6 @@
+__pycache__/
+*.egg-info/
+report.html
+.venv/
+examples/demo-site/*.png
+examples/demo-site/*.jpg
