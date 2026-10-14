@@ -46,6 +46,18 @@ Tested on a 2-core CPU-only Linux box with about 2 GB of RAM:
 - With `bfloat16` on that box, each image took roughly 20 seconds (two short generations per image). The very first generation was slower.
 - Not tested: GPUs, Apple Silicon, Windows, other models, and large or JavaScript-heavy sites.
 
+## Sample run on a real page
+
+Run on the W3C "before" demo page, which is deliberately inaccessible ([source](https://www.w3.org/WAI/demos/bad/before/home.html)), with `--max-images 3` on the CPU box described above. Three images had no `alt` attribute:
+
+| Image | Drafted alt |
+| --- | --- |
+| `top_weather.gif` | A yellow sun and a gray cloud. |
+| `teaser_right1.jpg` | A woman is singing on a microphone in front of a large screen with bright lights. |
+| `teaser_right2.jpg` | A flower with a yellow center and white petals. |
+
+I checked the thumbnails by eye and the drafts matched them. They describe what is visible, not what the image is for on the page (for example, the weather icon is really "today's weather"), so a person still has to edit them. This is one page and three images, not a quality measurement. axe-core also reported 2 contrast failures there.
+
 ## Limits
 
 - The model is small. Drafts can be vague, repeat the obvious, or be wrong. In testing, long page text in the prompt made it copy that text or make things up, so only the nearest heading is sent. For linked images the destination is added by code, not by the model.
