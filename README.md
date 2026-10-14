@@ -4,7 +4,11 @@ An alt-text and contrast helper for freelance web developers. Give it one URL an
 
 > AI-drafted suggestions. Review before using. This tool does not check full accessibility.
 
-Demo video (a produced walkthrough built from a real run; waits are sped up and labeled): [docs/1-altcheck-demo.mp4](docs/1-altcheck-demo.mp4)
+Demo video (a produced walkthrough built from a real run; waits are sped up and labeled):
+
+
+
+https://github.com/user-attachments/assets/254e4650-2c01-42c2-90aa-faed36da46bd
 
 ## What it does
 
