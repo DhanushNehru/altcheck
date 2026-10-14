@@ -48,7 +48,7 @@ Tested on a 2-core CPU-only Linux box with about 2 GB of RAM:
 
 ## Sample run on a real page
 
-Run on the W3C "before" demo page, which is deliberately inaccessible ([source](https://www.w3.org/WAI/demos/bad/before/home.html)), with `--max-images 3` on the CPU box described below. Three images had no `alt` attribute:
+Run on the W3C "before" demo page, which is deliberately inaccessible ([source](https://www.w3.org/WAI/demos/bad/before/home.html)), with `--max-images 3` on the CPU box described above. Three images had no `alt` attribute:
 
 | Image | Drafted alt |
 | --- | --- |
