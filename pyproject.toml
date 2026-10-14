@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "altcheck"
+version = "0.1.0"
+description = "Alt-text and contrast helper for freelance web developers. Drafts fixes for a human to review."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+  "playwright>=1.40",
+  "transformers>=4.50",
+  "torch",
+  "pillow",
+  "num2words",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+altcheck = "altcheck.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
